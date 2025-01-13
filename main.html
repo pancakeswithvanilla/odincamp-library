@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="script.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Books</title>
+</head>
+<body>
+    <div>
+        <div>
+            <div id = "title">
+                <h1>Welcome to your Library app</h1>
+            </div>
+            <div id ="bookdisplay">
+
+            </div>
+        </div>
+        <div>
+            <button id = "newbook">New Book</button>
+        </div>
+        <dialog id = "addbookdialog">
+            <p>Add a book</p>
+            <form action="submit" id = "newbookform">
+                <label for="booktitle">Title:</label><br>
+                <input type="text" id ="booktitle" name = "booktitle" required><br>
+                <label for="author">Author:</label><br>
+                <input type="text" id = "author" name = "author" required><br>
+                <label for="numpages">Number of pages:</label><br>
+                <input type="text" id = "numpages" name = "numpages" required><br>
+                <input type="radio" id ="read" name ="status" value = "Read" required>
+                <label for="read">Read</label><br>
+                <input type="radio" id ="notread" name = "status" value ="Not read yet">
+                <label for="notread">Not read yet</label><br>
+                <input type="submit" value="Submit">
+            </form>
+            <button id ="closebtn">Close</button>
+        </dialog>
+
+    </div>
+    <script src = "books.js"></script>
+</body>
+</html>
